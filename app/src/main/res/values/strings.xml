@@ -3,7 +3,12 @@
   <string name="team_hint">Enter a team name</string>
   <string name="team_button">SHOW MEMBERS</string>
   <string name="default_team_name">raywenderlich</string>
+  <string name="label_name">Name: </string>
+  <string name="label_login">Login: </string>
+  <string name="label_company">Company: </string>
+  <string name="label_type">Type: </string>
   <string name="error_retrieving_team">Error retrieving team</string>
   <string name="error_retrieving_member">Error retrieving member</string>
   <string name="error_team_name_empty">Team name cannot be empty</string>
+  <string name="contentDescription_teamMemberAvatar">Team member avatar</string>
 </resources>

@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import com.raywenderlich.android.octomembers.R
 import com.raywenderlich.android.octomembers.model.Member
 import com.raywenderlich.android.octomembers.ui.member.MemberActivity
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.list_item_team_member.view.*
 
 class TeamMemberAdapter(var members: List<Member>) : RecyclerView.Adapter<TeamMemberAdapter.TeamMemberViewHolder>() {
@@ -30,7 +31,10 @@ class TeamMemberAdapter(var members: List<Member>) : RecyclerView.Adapter<TeamMe
 
     fun bind(member: Member) {
       this.member = member
+      Picasso.get().load(member.avatarUrl)
+              .into(itemView.teamMemberAvatar)
       itemView.teamMemberLogin.text = member.login
+      itemView.teamMemberType.text = member.type
     }
 
     override fun onClick(view: View) {
